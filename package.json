@@ -1,6 +1,7 @@
 {
   "name": "admin_portal",
   "version": "0.1.0",
+  "homepage": "http://deepugupta1846.com/admin-portal",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.6",
