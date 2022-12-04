@@ -35,7 +35,7 @@ export const getAllUsers = (pageNumber) => {
   const alluser = async (dispatch, getState) => {
     try {
       const res = await fetch(
-        `https://admin--portal.herokuapp.com/adminportal/users?page=${pageNumber}`
+        `https://easy-cyan-ladybug-hat.cyclic.app/adminportal/users?page=${pageNumber}`
       );
       const result = await res.json();
       dispatch(setAllUsers(result.result));

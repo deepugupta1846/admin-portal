@@ -32,7 +32,7 @@ export const adminAuthentication = (username, password) => {
         password: password,
       };
       const res = await fetch(
-        "https://admin--portal.herokuapp.com/adminportal/admin/login",
+        "https://easy-cyan-ladybug-hat.cyclic.app/adminportal/admin/login",
         {
           method: "POST",
           headers: {
@@ -64,7 +64,7 @@ export const getLoggedinData = () => {
           token: token,
         };
         const res = await fetch(
-          "https://admin--portal.herokuapp.com/adminportal/admin/login",
+          "https://easy-cyan-ladybug-hat.cyclic.app/adminportal/admin/login",
           {
             method: "GET",
             headers: {
