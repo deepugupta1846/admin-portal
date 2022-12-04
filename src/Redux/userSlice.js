@@ -53,7 +53,7 @@ export const insertUsers = (data) => {
   const adduser = async (dispatch, getState) => {
     try {
       const res = await fetch(
-        "https://admin--portal.herokuapp.com/adminportal/adduser/",
+        "https://easy-cyan-ladybug-hat.cyclic.app/adminportal/adduser/",
         {
           method: "POST",
           headers: {
@@ -76,7 +76,7 @@ export const update_user = (user_id, user_data) => {
   const updateUser = async (dispatch, getState) => {
     try {
       const res = await fetch(
-        `https://admin--portal.herokuapp.com/adminportal/users/${user_id}`,
+        `https://easy-cyan-ladybug-hat.cyclic.app/adminportal/users/${user_id}`,
         {
           method: "POST",
           headers: {
@@ -98,7 +98,7 @@ export const delete_user = (user_id) => {
   const deleteUser = async (dispatch, getState) => {
     try {
       const res = await fetch(
-        `https://admin--portal.herokuapp.com/adminportal/users/${user_id}`,
+        `https://easy-cyan-ladybug-hat.cyclic.app/adminportal/users/${user_id}`,
         { method: "DELETE" }
       );
       const result = await res.json();
